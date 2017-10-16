@@ -20,13 +20,18 @@ import 'package:angular_router/angular_router.dart';
     'package:angular_components/src/components/app_layout/layout.scss.css'
   ],
   templateUrl: 'app_component.html',
-  directives: const [CORE_DIRECTIVES, materialDirectives, TodoListComponent, ROUTER_DIRECTIVES],
-  providers: const [materialProviders],
+  directives: const [CORE_DIRECTIVES, ROUTER_DIRECTIVES, materialDirectives, TodoListComponent],
+  providers: const [ROUTER_PROVIDERS, materialProviders],
 )
 @RouteConfig(const [
   const Redirect(path: '/', redirectTo: const ['Heroes']),
-  const Route(path: '/crisis-center', name: 'CrisisCenter', component: CrisisCenterComponent),
-  const Route(path: '/heroes', name: 'Heroes', component: HeroesComponent)
+  const Route(
+      path: '/crisis-center',
+      name: 'CrisisCenter',
+      component: CrisisCenterComponent),
+  const Route(path: '/heroes', name: 'Heroes', component: HeroesComponent),
+  // Not yet used: const AuxRoute(path: '/contact', name: 'Contact', component: ComposeMessageComponent),
+  const Route(path: '/**', name: 'NotFound', component: HeroesComponent)
 ])
 class AppComponent {
   // Nothing here yet. All logic is in TodoListComponent.
