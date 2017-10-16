@@ -2,8 +2,8 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:angular/angular.dart';
-import 'package:angular1/src/crisis/crisis_center_component.dart';
-import 'package:angular1/src/heroes/heroes_component.dart';
+import 'src/crisis/crisis_center_component.dart';
+import 'src/heroes/heroes_component.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'src/todo_list/todo_list_component.dart';

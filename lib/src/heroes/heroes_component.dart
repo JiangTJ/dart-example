@@ -4,7 +4,7 @@ import 'package:angular_components/angular_components.dart';
 import 'package:markdown/markdown.dart';
 
 @Component(
-  selector: 'todo-list',
+  selector: 'my-heroes',
   //styleUrls: const ['heroes_component.css'],
   templateUrl: 'heroes_component.html',
   directives: const [
