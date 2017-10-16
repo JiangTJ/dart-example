@@ -10,6 +10,7 @@ environment:
 dependencies:
   angular: ^4.0.0
   angular_components: ^0.6.0
+  angular_router: ^1.0.2
   markdown: ^0.11.4
 
 dev_dependencies:

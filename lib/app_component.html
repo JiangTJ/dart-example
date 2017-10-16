@@ -3,10 +3,10 @@
         <div group class="mat-drawer-spacer"></div>
         <div group>
             <material-list-item>
-                <material-icon icon="inbox"></material-icon>Inbox
+                <a [routerLink]="['CrisisCenter']"><material-icon icon="inbox"></material-icon>Inbox</a>
             </material-list-item>
             <material-list-item>
-                <material-icon icon="star"></material-icon>Star
+                <a [routerLink]="['Heroes']"><material-icon icon="star"></material-icon>Star</a>
             </material-list-item>
             <material-list-item>
                 <material-icon icon="send"></material-icon>Sent Mail
@@ -47,6 +47,10 @@
         contentHtml:<div id="content-html" [innerHtml]="contentHtml"></div>
     </div>
 
+    <h3>路由</h3>
+    <router-outlet></router-outlet>
+
+    <h3>列表</h3>
     <todo-list></todo-list>
 
 </material-content>
