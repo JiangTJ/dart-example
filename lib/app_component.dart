@@ -21,7 +21,7 @@ import 'package:angular_router/angular_router.dart';
   ],
   templateUrl: 'app_component.html',
   directives: const [CORE_DIRECTIVES, ROUTER_DIRECTIVES, materialDirectives, TodoListComponent],
-  providers: const [ROUTER_PROVIDERS, materialProviders],
+  providers: const [materialProviders],
 )
 @RouteConfig(const [
   const Redirect(path: '/', redirectTo: const ['Heroes']),

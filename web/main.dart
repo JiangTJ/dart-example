@@ -4,7 +4,12 @@
 import 'package:angular/angular.dart';
 
 import 'package:angular1/app_component.dart';
+import 'package:angular_router/angular_router.dart';
 
 void main() {
-  bootstrap(AppComponent);
+  bootstrap(AppComponent, [
+    ROUTER_PROVIDERS,
+    // Remove next line in production
+    provide(LocationStrategy, useClass: HashLocationStrategy),
+  ]);
 }
