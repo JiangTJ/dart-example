@@ -1,0 +1,17 @@
+image: dart:1.24.0
+
+pages:
+  cache:
+    paths:
+    - .pub/
+
+  script:
+
+  - pub get
+  - pub build
+
+  artifacts:
+    paths:
+    - build/web
+  only:
+  - master
