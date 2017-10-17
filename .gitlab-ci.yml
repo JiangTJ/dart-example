@@ -9,6 +9,9 @@ pages:
 
   - pub get
   - pub build
+  - ls -a
+  - cd build
+  - ls -a
 
   artifacts:
     paths:
