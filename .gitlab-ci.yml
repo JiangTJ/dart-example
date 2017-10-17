@@ -9,12 +9,10 @@ pages:
 
   - pub get
   - pub build
-  - ls -a
-  - cd build
-  - ls -a
+  - mv build/web public
 
   artifacts:
     paths:
-    - build/web
+    - public
   only:
   - master
