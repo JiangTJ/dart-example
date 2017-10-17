@@ -1,4 +1,4 @@
-image: dart:1.24.0
+image: google/dart:1.24.0
 
 pages:
   cache:
